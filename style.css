@@ -1,0 +1,243 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(255, 253, 250);
+}
+h2, h3, h4, .nav-item, #transition, footer {
+    text-align: center;
+}
+::selection {
+    background-color: rgb(224, 0, 118);
+    color: rgb(0, 0, 0);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap');
+/******************* HEADER *******************/
+.collapse {
+    margin-left: 4%;
+}
+.nav-item {
+    color: darkslategray;
+    font-weight: bold;
+    padding-right: 45px;
+}
+.nav-item:hover {
+    color: rgb(224, 0, 118);
+}
+header {
+    background: url(./media/donuts-main.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+h1 {
+    font-size: 5em;
+    font-weight: 900;
+    padding: 200px 0 0 20%;
+    text-shadow: -3px 3px 2px #000000;
+    animation: titre ease 4.5s;
+    color: rgb(224, 0, 118);
+}
+@keyframes titre {
+    0% {
+        opacity: 0;
+        transform: translateY(320px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/******************* LEFT PART *******************/
+.btn__text {
+    display: inline-block;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+.fRPTYe  {
+    -webkit-box-align: center;
+    align-items: center;
+    background: none rgb(94, 12, 77);
+    border-radius: 2.125rem;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: rgb(255, 247, 234);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 3.125rem;
+    line-height: 1.15;
+    margin: 15px 4% 0 0;
+    padding: 0.625rem 1.5625rem 0.5625rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    vertical-align: middle;
+    min-width: 15rem;
+    transition: all 0.5s ease 0s;
+}
+.iQN1FF a:hover {
+    background-color: rgb(224, 0, 118);
+    text-decoration: none;
+    color: rgb(255, 247, 234);
+}
+#leftPart {
+    background-color: rgb(254, 218, 164);
+    border-radius: 20px;
+    padding: 25px;
+}
+#leftPart h2 {
+    font-weight: bold;
+    color: rgb(224, 0, 118);
+}
+.elements {
+    padding: 70px 0;
+}
+.elements img {
+    border-radius: 90%;
+    width: 200px;
+}
+.elements p {
+    font-size:  1.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    padding-right: 20px;
+}
+/******************* RIGHT PART *******************/
+#rightPart {
+    background-color: #f5cfcf;
+    border-radius: 20px;
+    padding: 20px;
+}
+#rightPart h2 {
+    font-weight: bold;
+    color: rgb(94, 12, 77);
+}
+.tips {
+    height: 200px;
+    width: 200px;
+    /* (margin: 20px auto) Pour centrer les images de 20px en haut et en bas; auto sur les côtés */
+    margin: 20px auto; 
+}
+.tips h4 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #dd3cad;
+    text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77,0,38,0.5), 3px 0 3px #e232ad, 5px 0 3px #a01b6d, 6px 2px 3px rgba(77,0,13,0.5), 6px 0 9px #FF5500, 8px 0 9px #802A00, 9px 2px 9px rgba(77,25,0,0.5), 9px 0 18px #070600, 11px 0 18px #806A00, 12px 2px 18px rgba(77,66,0,0.5), 12px 0 30px #ff00dd, 14px 0 30px #040500, 15px 2px 30px rgba(64,77,0,0.5), 15px 0 45px #180218, 17px 0 45px #22011f, 17px 2px 45px rgba(38,77,0,0.5);
+color: #ffffff;
+color: #ffffff;
+}
+.tips:hover {
+    transform: scale(1.08);
+    opacity: 0.7;
+    transition: ease-out 0.3s;
+}
+
+#transition {
+    padding: 50px 0;
+}
+#transition img {
+    animation: donuts 5s ease 1s infinite reverse forwards;
+}
+
+@keyframes donuts {
+	0% {
+		opacity: 0;
+		transform: rotate(-540deg) scale(2);
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+	}
+}
+
+/******************* NEWSLETTER FOOTER*******************/
+#newsletter {
+    background: url(./media/newletter.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 370px;
+    width: 70%;
+    min-width: 450px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 70px;
+}
+#newsletter h4 {
+    margin-top: 20px;
+    padding: 100px 0 20px;
+    font-size: 2em;
+    text-shadow: 2px 0 0px #f57db9b9, 3px 2px 0px rgba(207, 56, 131, 0.911), 5px 0 3px #800015, 8px 0 9px #802A00, 9px 2px 9px rgb(247, 103, 158), 15px 2px 30px rgba(74, 152, 241, 0.5), 9px 16px 18px rgba(184,28,149,0.5);
+}
+#newsletter .input-group {
+    width: 40%;
+    min-width: 350px;
+    margin: 0 auto;
+}
+footer {
+    background-color: rgb(255, 247, 234);
+    padding: 15px 0 15px 0;
+}
+#txt-footer {
+    font-weight: 900;
+}
+
+/********************** MEDIA QUERIES **********************/
+@media screen and (max-width: 990px) {
+    #rightPart {
+        display: flex;
+    }
+    #rightPart h2 {
+        display: none;
+    }
+    .tips {
+        height: 130px;
+        width: 130px;
+    }
+}
+@media screen and (max-width: 790px) {
+    h1 {
+        font-size: 3em; /* Titre */
+    }
+    .elements {
+        padding: 30px 0; /* éléments-paragraphe */
+    }
+    .elements img {
+        max-width: 140px;
+        margin-top: 40px;
+    }
+    #transition img {
+        width: 250px;
+    }
+    .tips {
+        height: 90px;
+        width: 90px;
+    }
+    .tips h4 {
+        font-size: 0.9em;
+    }
+    @media screen and (max-width: 580px) {
+        .elements {
+            padding: 15px 0;
+            text-align: center;
+        }
+        .elements img { /* écart entre image et son titre */
+            margin-bottom: 10px;
+        }
+    }
+    nav {
+        display: none !important;
+    }
+}
