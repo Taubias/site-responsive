@@ -1,3 +1,3 @@
 # site-responsive
 Utilisatio de Bootstrap 
-JQuery pour la navbar
+Et JQuery pour la navbar
